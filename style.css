@@ -1,0 +1,90 @@
+body{
+    background-color: #FF204E;
+    height: 100vh;
+    overflow: hidden;
+display: flex;
+justify-content: center;
+overflow: auto;
+}
+form{
+    width: 50%;
+    height: 100%;
+    background-color: #5D0E41;
+    border-radius: 23px;
+    display: flex;
+    justify-content: space-around;
+    
+    flex-direction: column;
+    padding: 20px;
+
+}
+
+.text-validation{
+    color :white;
+    font-weight:bolder ;
+    font-size: 40px;
+    font-family: arial;
+    text-align: center;
+}
+
+input[type=text],input[type=email]{
+width: 92%;
+padding: 20px;
+border-radius: 5px;
+border: none;
+}
+
+select{
+    width: 100%;
+padding: 10px;
+border-radius: 5px;
+}
+textarea{
+    width: 95%;
+padding: 10px;
+border-radius: 5px;
+}
+
+input[type=submit]{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #00224D;
+    color: white;
+    border: none;
+}
+
+.genre,.langues{
+    display: flex;
+
+    justify-content: space-around;
+    color: white;
+    width: 50%;
+    margin-left: 10px;
+}
+
+.genre,.langues{
+    flex-direction: column;
+}
+.ville{
+    display: flex;
+    color: white;
+    margin-left: 18px;
+gap: 50px;
+}
+
+@media only screen and (max-width: 660px) {
+ .container{
+    width: 100%;
+ }
+ body{
+    overflow: auto;
+ }
+}
+
+.danger{
+    color: red;
+    padding: 0;
+    margin: 0;
+}
+
